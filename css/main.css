@@ -1,27 +1,18 @@
 /* 
 andybartle.com
 */
+
 body{
     background: #eeeeee;
-    padding-top: 54px;
+    padding-top: 50px;
     font-family: 'Varela Round', sans-serif;
 }
-  
-  @media (min-width: 992px) {
-    body {
-      padding-top: 56px;
-    }
-  }
-  
-  .bg-image-full {
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
-  
-  .form-inline {
+
+
+
+
+/* Navigation bar styles */
+.form-inline {
     display: inline-block;
 }
 .navbar-header.col {
@@ -51,54 +42,29 @@ body{
 }
 .navbar .navbar-brand b {
     font-weight: bold;
-    color: #F00000;
+    color: #f00000
 }
 .navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
-    color: #F00000 !important;
+    color: #f00000 !important;
 }
 .navbar ul.nav li.active a, .navbar ul.nav li.active a:hover, .navbar ul.nav li.active a:focus {
-    color:  #F00000 !important;
+    color: #f00000 !important;
     background: transparent !important;
 }
-
 .navbar .nav-item i {
     font-size: 18px;
 }
-/* .navbar .dropdown-item i {
-    font-size: 16px;
-    min-width: 22px;
-}
-.navbar .nav-item.open > a {
-    background: none !important;
-}
-.navbar .dropdown-menu {
-    border-radius: 1px;
-    border-color: #e5e5e5;
-    box-shadow: 0 2px 8px rgba(0,0,0,.05);
-}
-.navbar .dropdown-menu li a {
-    color: #777;
-    padding: 8px 20px;
-    line-height: normal;
-} */
-.navbar .navbar-form {
-    margin-right: 0;
-    margin-left: 0;
-    border: 0;
-}
-@media (min-width: 992px){
-    .form-inline .input-group {
-        width: 250px;
-        margin-right: 30px;
-    }
-}
-@media (max-width: 991px){
-    .form-inline {
-        display: block;
-        margin-bottom: 10px;
-        margin-top: 0;
-    }
-    .input-group {
-        width: 100%;
-    }
-}
+/* Navigation bar styles END */
+
+
+/* Styles for header */
+.business-header {
+    height: 50vh;
+    min-height: 300px;
+    background: url('../images/nepal.JPG') center center no-repeat scroll;
+    opacity: 0.6;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
