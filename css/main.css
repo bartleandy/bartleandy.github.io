@@ -1,43 +1,104 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/* 
+andybartle.com
+*/
+body{
+    background: #eeeeee;
+    padding-top: 54px;
+    font-family: 'Varela Round', sans-serif;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
+  
+  .bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  .form-inline {
+    display: inline-block;
+}
+.navbar-header.col {
+    padding: 0 !important;
+}	
+.navbar {		
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #d6d6d6;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
+}
+.nav-link img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
+}
+.navbar .navbar-brand {
+    color: #555;
+    padding-left: 0;
+    font-size: 20px;
+    padding-right: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
     font-weight: bold;
+    color: #F00000;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
+    color: #F00000 !important;
 }
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.navbar ul.nav li.active a, .navbar ul.nav li.active a:hover, .navbar ul.nav li.active a:focus {
+    color:  #F00000 !important;
+    background: transparent !important;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.navbar .nav-item i {
+    font-size: 18px;
 }
-
-ul.posts li {
-    list-style: none;
+/* .navbar .dropdown-item i {
+    font-size: 16px;
+    min-width: 22px;
+}
+.navbar .nav-item.open > a {
+    background: none !important;
+}
+.navbar .dropdown-menu {
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu li a {
+    color: #777;
+    padding: 8px 20px;
+    line-height: normal;
+} */
+.navbar .navbar-form {
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+}
+@media (min-width: 992px){
+    .form-inline .input-group {
+        width: 250px;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 991px){
+    .form-inline {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .input-group {
+        width: 100%;
+    }
 }
